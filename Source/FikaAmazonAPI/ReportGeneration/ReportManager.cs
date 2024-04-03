@@ -153,7 +153,7 @@ namespace FikaAmazonAPI.ReportGeneration
         }
         private async Task<IList<string>> GetSettlementOrderAsync(AmazonConnection amazonConnection, DateTime fromDate, DateTime toDate)
         {
-            return await amazonConnection.Reports.DownloadExistingReportAndDownloadFileAsync(ReportTypes.GET_V2_SETTLEMENT_REPORT_DATA_FLAT_FILE_V2, fromDate, toDate);
+            return await amazonConnection.Reports.DownloadExistingReportAndDownloadFileAsync("",ReportTypes.GET_V2_SETTLEMENT_REPORT_DATA_FLAT_FILE_V2, fromDate, toDate);
         }
         #endregion
 
